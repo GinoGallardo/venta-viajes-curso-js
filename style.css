@@ -36,4 +36,18 @@ li a:hover:not(.active) {
     margin-left: 25%;
     padding: 1px 16px;
     height: 1000px;
+    margin-bottom: 1em;
+}
+
+.contenedor h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.contenedor h4{
+    background-color: yellow;
+    text-align: center;
+    font-size: 1.2em;
+    border: #fc0909 1em ridge;
+   
 }
