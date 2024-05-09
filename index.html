@@ -5,26 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navegación con Javascript</title>
+    <title>Agencia de Viajes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <ul>
-        <li><a>Barcelona</a></li>
-        <li><a>Roma</a></li>
-        <li><a>París</a></li>
-        <li><a>Londres</a></li>
-    </ul>
-
-    <div class="contenedor">
-        <h2 id="titulo">Bienvenidos a nuestra Web</h2>
-        <h3 id="subtitulo">Elija su destino</h3>
-        <p id="parrafo">Le aseguramos la mejor experiencia en viajes!!!</p>
-        <h4 id="precio">Paquetes al mejor precio</h4>
-    </div>
-
+    <header>
+        <ul class="m-2">      
+            <div class="container-fluid mt-4 mb-4">
+                <div class="row d-flex flex-column justify-content-center">
+                    <h5 class="col text-center">Viajes y Turismo</h5>
+                    <a class="col align-self-center w-50" href=""><img class="img-fluid" src="./image/logo-viajes.png" alt=""></a>
+                </div>
+            </div>
+            <li><a>Barcelona</a></li>
+            <li><a>Roma</a></li>
+            <li><a>París</a></li>
+            <li><a>Londres</a></li>
+            <div class="container-fluid mt-4">
+                <img class="img-fluid" id="imagenes_ciudades" src="" alt="">
+            </div>
+        </ul>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h2 class="fst-italic" id="titulo">Bienvenidos a nuestra Web</h2>
+            <h3 class="fst-italic mx-5" id="subtitulo">Elije ya tu destino</h3>
+            <p class="mx-5" id="parrafo">Le aseguramos la mejor experiencia en viajes!!!</p>
+        </div>
+    </main>
+    <footer>
+        <h4 class="" id="precio">Recerva tu viaje  al mejor precio</h4>
+    </footer>
     <script type="module" src="script.js"></script>
 </body>
 

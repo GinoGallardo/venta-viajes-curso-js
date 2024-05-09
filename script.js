@@ -6,16 +6,19 @@ let tituloElemento = document.getElementById('titulo')
 let subTituloElemento = document.getElementById('subtitulo')
 let parrafoElemento = document.getElementById('parrafo')
 let precioElemento =document.getElementById('precio')
+let imagenCiudades = document.getElementById('imagenes_ciudades')
 
 //Agregar un evento cLICK a cada enlace
 enlaces.forEach(function(enlace){
   enlace.addEventListener('click', function(){
     enlaces.forEach(function (enlace){
       enlace.classList.remove('active');
+      precioElemento.classList.remove('active');
   });
 
   //AGREGAR ACTIVE AL QUE CORRESPONDA
   this.classList.add('active')
+  precioElemento.classList.add('active')
 
   //Obtener el contenido correspondiente según el enlace
   let contenido = obtenerContenido(this.textContent)
@@ -24,6 +27,7 @@ enlaces.forEach(function(enlace){
   subTituloElemento.innerHTML = contenido.subtitulo
   parrafoElemento.innerHTML = contenido.parrafo
   precioElemento.innerHTML = contenido.precio
+  imagenCiudades.src = contenido.imagenes_ciudades
 });
 
 //FUNCION PARA TRAER LA INFORMACION CORRECTA DESDE ciudades.js
@@ -34,5 +38,6 @@ function obtenerContenido(enlace){
     'París' : paris,
     'Londres' : londres
   };
+  
   return contenido[enlace];
 }})
